@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+#navbar {
+    width: 100%;
+    position: fixed;  
+    background-color: #0e0808;
+    display: grid;
+    grid-template-columns: repeat(3, auto) 1fr auto;
+    grid-template-rows: auto;
+    justify-content: start;
+    color: white;
+    position: relative;
+}
+
+#navbar li a{
+    display: block;
+    padding: 2rem; 
+}
+
+#navbar li a:hover{
+    background-color: blue;
+    display: block;
+    padding: 2rem; 
+}
+
+.ses {    
+    justify-self: end;
+}
+
+.submenu {
+    
+    position: absolute;
+    bottom: 0;
+}
+
+.submenu:hover {
+    color: red;
+    display: block;
+}
+
+li {
+    position: relative;
+}
+
+li ul {
+    display: none;
+}
+
+li:hover > ul{
+    padding: 0;
+    display: block;
+    position: absolute;    
+    background-color: #0e0808;
+}
+
+.imgprincipal {
+    max-height: 300px;
+    width: 100%;
+    object-fit: contain;
+}
